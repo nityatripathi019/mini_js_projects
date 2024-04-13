@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .main {
+            height: 50vh;
+            width: 30vw;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 5px;
+
+        }
+         .options{
+            margin: 10px;
+         }
+        button {
+            
+           width: 100%;
+            background-color: skyblue;
+            border: none;
+            border-radius: 5px;
+            margin-top: 8px;
+            padding: 7px;
+            font-size: 1rem;
+            font-weight: 500;
+            
+        }
+         .box{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+         }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">
+            <div id="quesbox"><h1>This is a dummy question</h1></div>
+        
+            <div class="row">
+                <input type="radio" id="option1" class="options" value="a" name="option">
+                <label for="option1">Option 1</label>
+            </div>
+            <div class="row">
+                <input type="radio" id="option2" class="options" value="b" name="option">
+                <label for="option1">Option2 </label>
+            </div>
+            <div class="row">
+                <input type="radio" id="option3" class="options" value="c" name="option">
+                <label for="option1">Option 3 </label>
+            </div>
+            <div class="row">
+                <input type="radio" id="option" class="options" value="d" name="option">
+                <label for="option1">Option 4 </label>
+            
+        </div>
+            
+            <button  onclick="submitQuiz()">Submit</button>
+        
+           
+    </div>
+    </div>
+<script src="quiz.js"></script>
+
+</body>
+
+</html>

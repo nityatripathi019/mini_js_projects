@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color switcher game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .wrapper {
+            height: 163px;
+            width: 251px;
+            padding-left: 24px;
+            /* padding: 17px; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            margin: 2px;
+        }
+
+        #box1 {
+            background-color: blueviolet;
+        }
+
+        #box2 {
+            background-color: greenyellow;
+        }
+
+        #box3 {
+            background-color: red;
+        }
+
+        #box4 {
+            background-color: purple;
+        }
+
+        .content {
+            max-height: 130px;
+            width: 342px;
+            
+            margin-top: 3px;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        span #t2{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Color Switcher game</h2>
+    <div class="wrapper">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+       
+    </div>
+    <div class="content">
+        <span id="t1"> Try clicking on one of the colors</span><br>
+        <span id="t2">above</span><br>
+        <span id="t3"> to change the background color of this page !</span>
+    </div>
+
+ <script src="switcher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: dodgerblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .wrapper {
+            height: 400px;
+            width: 55%;
+
+            box-shadow: 0px 0px 3px grey;
+            margin-top: 40px;
+            border: 1px solid black;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .slides {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+                transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="https://picsum.photos/id/237/1000/400" alt="" class="slides">
+        <img src="https://picsum.photos/id/238/1000/400" alt="" class="slides">
+        <img src="https://picsum.photos/id/239/1000/400" alt="" class="slides">
+        <img src="https://picsum.photos/id/240/1000/400" alt="" class="slides">
+        <img src="https://picsum.photos/id/241/1000/400" alt="" class="slides">
+    </div>
+    <div class="box">
+        <button  onclick="goPrev()">Prev</button>
+        <button onclick="goNext()" >Next</button>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+
+</html>

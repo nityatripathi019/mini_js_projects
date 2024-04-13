@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body >
+    <!-- child parent relations -->
+    <div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+        <div class="days">Friday</div>
+        <div class="days">Saturday</div>
+        <div class="days">Sunday</div>
+    </div>
+    <script>
+      const parent =  document.querySelector(".parent");
+    //   console.log(parent);
+      
+    //   console.log(parent.children[0].innerHTML);
+    //   for(let i=0;i<parent.children.length;i++){
+    //     console.log(parent.children[i]);
+    //   }
+     console.log(parent.firstElementChild);  //to get  first element
+      console.log(parent.firstElementChild.innerHTML);
+      console.log(parent.lastElementChild);
+      console.log(parent.lastElementChild.innerHTML);
+    //   for(let i=0;i<parent.children.length;i++){
+    //     console.log(parent.children[i].innerHTML);
+    //   }
+    //   console.log(parent.children[2].style.color = "green")
+      const dayOne = parent.children[0];
+    //   dayOne.style.color = "red"
+    //   console.log(dayOne);
+    //   console.log(dayOne.parentElement);
+    //    console.log(dayOne.nextElementSibling);
+
+    // console.log("NODES" , parent.childNodes);
+    // const a = parent.childNodes
+    // a.forEach(element => {
+    //     console.log(element)
+    // });
+
+
+
+    </script>
+</body>
+</html>
